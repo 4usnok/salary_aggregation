@@ -3,14 +3,16 @@ name = "salary-aggregation"
 version = "0.1.0"
 description = ""
 authors = [
-    {name = "Your Name",email = "you@example.com"}
+    {name = "Nikolay Korkushko",email = "nikolaykorkushko@gmail.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "fastapi (>=0.118.2,<0.119.0)",
     "uvicorn (>=0.37.0,<0.38.0)",
-    "pymongo (>=4.15.3,<5.0.0)"
+    "pymongo (>=4.15.3,<5.0.0)",
+    "aiogram (>=3.22.0,<4.0.0)",
+    "motor (>=3.7.1,<4.0.0)"
 ]
 
 
