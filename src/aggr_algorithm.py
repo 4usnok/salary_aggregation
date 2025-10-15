@@ -25,10 +25,10 @@ def save_in_json(dt_from, dt_upto, group_type):
         grouped_sums = defaultdict(int)
 
         for dictionary in data:
-            dt_value = dictionary.get('dt')
-            value = dictionary.get("value")  # Предполагаем, что поле с суммой называется "value"
+            dt_value = dictionary.get('dt') # вычленяем 'dt'
+            value = dictionary.get("value") # вычленяем 'value'
 
-            if dt_value and value is not None and dt_from_obj <= dt_value <= dt_upto_obj:
+            if dt_from_obj <= dt_value <= dt_upto_obj:
                 # Определяем ключ группировки
                 if group_type == 'hour':
                     # Группировка по часам
