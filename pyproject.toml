@@ -17,3 +17,10 @@ dependencies = [
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.lint.dependencies]
+black = "^25.9.0"
+mypy = "^1.18.2"
+flake8 = "^7.3.0"
+isort = "^7.0.0"
+
