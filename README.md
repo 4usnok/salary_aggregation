@@ -2,7 +2,8 @@
 Алгоритм агрегации статистических данных о зарплатах сотрудников компании по временным 
 промежуткам
 
-
+## Стэк: Git, ORM, OpenAPI Docs, PEP8, Readme, Tests, Async, FastAPI, JSON, MongoDB, Telegram
 
 # Содержание проекта
+
 
