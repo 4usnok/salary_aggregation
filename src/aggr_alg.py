@@ -1,6 +1,7 @@
 import json
 from collections import defaultdict
 from datetime import datetime
+
 import bson
 
 
@@ -19,7 +20,7 @@ def save_in_json(dt_from, dt_upto, group_type):
         dt_upto_obj = datetime.fromisoformat(dt_upto)
 
         # Читаем файл
-        data = read_file_bson("../data/sample_collection.bson")
+        data = read_file_bson("./data/sample_collection.bson")
 
         # Словарь для суммирования выплат по периодам
         grouped_sums = defaultdict(int)
@@ -77,7 +78,7 @@ def save_in_json(dt_from, dt_upto, group_type):
 
         result = {"dataset": dataset, "labels": labels}
 
-        with open("../data/pars_file.json", "w", encoding="utf-8") as new_file:
+        with open("./data/file.json", "w", encoding="utf-8") as new_file:
             json.dump(result, new_file, ensure_ascii=False, indent=2, default=str)
             print("✅ JSON-файл с агрегациями создан")
             return result
