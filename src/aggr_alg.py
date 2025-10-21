@@ -78,7 +78,7 @@ def save_in_json(dt_from, dt_upto, group_type):
 
         result = {"dataset": dataset, "labels": labels}
 
-        with open("./data/file.json", "w", encoding="utf-8") as new_file:
+        with open("./data/new_file.json", "w", encoding="utf-8") as new_file:
             json.dump(result, new_file, ensure_ascii=False, indent=2, default=str)
             print("✅ JSON-файл с агрегациями создан")
             return result
